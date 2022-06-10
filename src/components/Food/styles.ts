@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface IContainerProps {
+  available: boolean;
+}
+
+export const Container = styled.div<IContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
@@ -33,7 +37,6 @@ export const Container = styled.div`
 
     p {
       color: #3d3d4d;
-
       margin-top: 16px;
     }
 
@@ -53,7 +56,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 30px;
     background: #e4e4eb;
     border-radius: 0px 0px 8px 8px;

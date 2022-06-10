@@ -24,7 +24,6 @@ export const Form = styled(Unform)`
     border: 0;
     background: #39b100;
     color: #fff;
-
     display: flex;
     flex-direction: row;
     align-items: center;
